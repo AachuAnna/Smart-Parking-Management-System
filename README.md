@@ -1,32 +1,63 @@
-# Intelligent Vehicle Parking Management System 🚗🅿️
+# Intelligent-Vehicle-Parking-Management-System
 
-An Arduino-based smart parking system that tracks vehicle entry and exit and displays real-time parking slot availability on an LCD.
+## 📌 Overview
+An Arduino-based smart parking management system that monitors vehicle entry and exit using sensors and displays real-time parking availability on an LCD. The system prevents over-parking, improves traffic flow, and demonstrates an efficient solution for smart parking infrastructure.
 
-## Features
-- Real-time parking slot count
-- Entry and exit vehicle detection
-- FULL indication when parking is full
-- LCD-based availability display
-- Simple and scalable design
+---
 
-## Components Used
-- Arduino UNO
-- 16x2 LCD Display
-- Entry IR Sensor / Push Button
-- Exit IR Sensor / Push Button
-- Resistors
-- Breadboard & Jumper wires
+## 🎯 Objectives
+- Automatically count vehicles entering and exiting the parking area
+- Display real-time parking availability
+- Prevent over-parking using logical constraints
+- Demonstrate a smart parking solution using embedded systems
 
-## Working Principle
-The system uses two sensors placed at the entry and exit gates.  
-When a vehicle enters, the used slot count increases.  
-When a vehicle exits, the used slot count decreases.  
-The LCD continuously displays used and free slots.  
-When all slots are occupied, the display shows **FULL**.
+---
 
-## Simulation Note
-In simulation, push buttons or IR sensors are used to represent vehicle detection.  
-This system can be extended with IoT modules for cloud-based monitoring.
+## ⚙️ System Working
+- Entry and exit of vehicles are detected using digital inputs (IR sensors in hardware, switches in simulation).
+- Each entry increases the occupied slot count.
+- Each exit decreases the occupied slot count.
+- The LCD continuously displays:
+  - Number of used slots
+  - Number of free slots
+- When parking capacity is reached, the system displays **FULL**.
 
-## Author
-Aachu Anna Sony
+---
+
+## 🧰 Components Used
+- Arduino UNO  
+- 2 × IR Sensors (Entry & Exit)  
+- 16×2 LCD Display  
+- Potentiometer (10kΩ)  
+- Breadboard  
+- Jumper Wires  
+
+---
+
+## 💡 Key Features
+- Real-time parking slot monitoring
+- Entry–exit logic to avoid false counting
+- Over-parking protection
+- Cost-effective and scalable design
+- Suitable for smart city applications
+
+---
+
+## 🧪 Simulation
+The system is simulated using **Tinkercad Circuits**.  
+Due to simulator limitations, slide switches are used to emulate IR sensor outputs.
+
+---
+
+## 🎥 Simulation Demo Video
+https://drive.google.com/file/d/1AsOzyqm-aX1JTN7TupA6AZhgFrEsGldE/view?usp=sharing
+
+---
+
+## 🚀 Future Enhancements
+- Gate control using servo motors
+- IoT-based parking availability display
+- Mobile application integration
+- Automated billing system
+
+
